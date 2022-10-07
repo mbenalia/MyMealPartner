@@ -4,15 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/instruction2"
+        android:layout_width="181dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="188dp"
+        android:ems="10"
+        android:inputType="textLongMessage|textMultiLine|text"
+        android:text="@string/it_should_take_at_least_20_minutes_to_finish_your_meal_select_the_time_between_each_bite"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction" />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="402dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/pick_your_time"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/instruction2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="98dp"
+        android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_time" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_time"
+        android:layout_width="281dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction2">
+
+        <RadioButton
+            android:id="@+id/radiobutton_30s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_30_seconds" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_60s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_60_seconds" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_90s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_90_seconds" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MyMealPartner</string>
+    <string name="it_should_take_at_least_20_minutes_to_finish_your_meal_select_the_time_between_each_bite">It should take at least 20 minutes to finish your meal. Select the time between each bite.</string>
+    <string name="pick_your_time">Pick your time</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="start">Start</string>
+    <string name="stop">STOP</string>
+    <string name="_30_seconds">30 Seconds</string>
+    <string name="_60_seconds">60 Seconds</string>
+    <string name="_90_seconds">90 Seconds</string>
 </resources>
